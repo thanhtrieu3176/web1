@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Online Classifieds Search Form</title>
+<script>
+function timKiem() {
+    alert("Đang tìm kiếm...");
+}
+function troGiup() {
+    window.open("Help.html", "help", "width=400,height=300");
+}
+function xoa() {
+    document.frmClassified.reset();
+}
+</script>
+</head>
+<body bgcolor="#CCFFFF" style="font-family: 'Times New Roman', serif;">
+<form name="frmClassified" method="post" action="">
+<table width="600" align="center" cellpadding="4" cellspacing="0" border="0">
+    <tr>
+        <td colspan="3"><h2><font color="#FF0000">Online Classifieds Search Form</font></h2><hr></td>
+    </tr>
+    <tr>
+        <td colspan="3"><b>1) Search for a classified in the following sections:</b></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <table border="0" cellpadding="1" cellspacing="0" style="margin-left:20px">
+                <tr>
+                    <td><input type="radio" name="rdoSection" value="Employment"> Employment</td>
+                    <td><input type="radio" name="rdoSection" value="Personal"> Personal</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="rdoSection" value="ForSale" checked> For Sale</td>
+                    <td><input type="radio" name="rdoSection" value="Misc"> Miscellanecus</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="rdoSection" value="Housing"> Housing</td>
+                    <td><input type="radio" name="rdoSection" value="All"> All of the above</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><b>2) Search the following publications:</b></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <table border="0" cellpadding="1" cellspacing="0" style="margin-left:20px">
+                <tr>
+                    <td><input type="checkbox" name="chkMidwest" checked> Midwest times</td>
+                    <td><input type="checkbox" name="chkModern"> Modern News</td>
+                    <td><input type="checkbox" name="chkEmployment"> Employment Today</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkGreatLakes" checked> Great Lakes Classifieds</td>
+                    <td><input type="checkbox" name="chkMiddleton"> Middleton Daily</td>
+                    <td><input type="checkbox" name="chkCashtown"> Cashtown Daily News</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+  <tr>
+                    <td colspan="3">
+                        <b>3) From</b>
+                        <input type="date" name="txtFrom" id="txtFrom">
+                        <b>to</b>
+                        <input type="date" name="txtTo" id="txtTo">
+                    </td>
+</tr>
+    <tr>
+        <td colspan="3"><b>4) Enter a few keywords to describe the classified.</b></td>
+    </tr>
+    <tr>
+        <td colspan="3"><input type="text" name="txtKeywords" size="70"></td>
+    </tr>
+    <tr>
+        <td colspan="3"><b>5) Click one of the options below:</b></td>
+    </tr>
+    <tr>
+        <td align="center"><img src="Bai49/Search.gif" alt="Search" style="cursor:pointer" onclick="timKiem()"></td>
+        <td align="center"><img src="Bai49/Help.gif" alt="Help" style="cursor:pointer" onclick="troGiup()"></td>
+        <td align="center"><img src="Bai49/Cancel.gif" alt="Cancel" style="cursor:pointer" onclick="xoa()"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

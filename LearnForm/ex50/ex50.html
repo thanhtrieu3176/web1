@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Travel Expense Report</title>
+<script>
+function guiBaoCao() {
+    alert("Đã gửi báo cáo chi phí!");
+}
+</script>
+</head>
+<body bgcolor="#CCFFFF">
+<form name="frmExpense" method="post" action="">
+<p align="center"><img src="Bai50/DeLong.jpg" alt="DeLong Enterprises"></p>
+<h2>Travel Expense Report</h2>
+<hr>
+<p>1) First Name: <input type="text" name="txtFirstName" size="18">
+Last Name: <input type="text" name="txtLastName" size="18"></p>
+<p>2) Social Security Number: <input type="text" name="txtSSN" size="10"></p>
+<p>3) Department:
+<select name="cboDepartment">
+    <option value="Accounting" selected>Accounting</option>
+    <option value="Marketing">Marketing</option>
+    <option value="Sales">Sales</option>
+    <option value="IT">IT</option>
+</select></p>
+<p>4) Describe the purpose of your trip.</p>
+<p><textarea name="txtPurpose" rows="5" cols="50"></textarea></p>
+<p>5) Itemize your travel expenses</p>
+<table border="1" cellpadding="3" cellspacing="2">
+    <tr align="center">
+        <th width="70">Date</th>
+        <th width="180">Description</th>
+        <th width="100">Category</th>
+        <th width="60">Amount</th>
+    </tr>
+    <tr>
+        <td><input type="text" name="txtDate1" size="8" value="mm/dd/yy"></td>
+        <td align="center"><input type="text" name="txtDesc1" size="22"></td>
+        <td><select name="cboCat1"><option>Meal</option><option>Hotel</option><option>Transport</option><option>Other</option></select></td>
+        <td><input type="text" name="txtAmount1" size="4"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="txtDate2" size="8" value="mm/dd/yy"></td>
+        <td align="center"><input type="text" name="txtDesc2" size="22"></td>
+        <td><select name="cboCat2"><option>Meal</option><option>Hotel</option><option>Transport</option><option>Other</option></select></td>
+        <td><input type="text" name="txtAmount2" size="4"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="txtDate3" size="8" value="mm/dd/yy"></td>
+        <td align="center"><input type="text" name="txtDesc3" size="22"></td>
+        <td><select name="cboCat3"><option>Meal</option><option>Hotel</option><option>Transport</option><option>Other</option></select></td>
+        <td><input type="text" name="txtAmount3" size="4"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="txtDate4" size="8" value="mm/dd/yy"></td>
+        <td align="center"><input type="text" name="txtDesc4" size="22"></td>
+        <td><select name="cboCat4"><option>Meal</option><option>Hotel</option><option>Transport</option><option>Other</option></select></td>
+        <td><input type="text" name="txtAmount4" size="4"></td>
+    </tr>
+</table>
+<p>6) Have you submitted your receipts?
+<input type="radio" name="rdoReceipt" value="Yes"> Yes
+<input type="radio" name="rdoReceipt" value="No"> No</p>
+<p><input type="button" value="Submit travel expenses" onclick="guiBaoCao()">
+<input type="reset" value="Reset"></p>
+<p>Questions? Contact Debbie Larson in Accounting (ext. 2150).</p>
+</form>
+</body>
+</html>

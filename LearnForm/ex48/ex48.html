@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration Form</title>
+<script>
+function dangKy() {
+    alert("Đăng ký thành công!");
+}
+</script>
+</head>
+<body bgcolor="#99CCFF">
+<form name="frmRegister" method="post" action="">
+<table width="600" align="center" cellpadding="3" cellspacing="0" border="0">
+    <tr>
+        <td colspan="2" align="center"><img src="hinh/Jackson.gif"></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><h2>Registration Form</h2></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">Register your Jackson Electronics product here</td>
+    </tr>
+    <tr>
+        <td>First Name:</td>
+        <td>
+            <input type="text" name="txtFirstName" size="15">
+            Last Name: <input type="text" name="txtLastName" size="15">
+        </td>
+    </tr>
+    <tr>
+        <td>Address #1:</td>
+        <td><input type="text" name="txtAddress1" size="40"></td>
+    </tr>
+    <tr>
+        <td>Address #2:</td>
+        <td><input type="text" name="txtAddress2" size="40"></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td>
+            <input type="text" name="txtCity" size="20">
+            State: <input type="text" name="txtState" size="3">
+            Zip: <input type="text" name="txtZip" size="8">
+        </td>
+    </tr>
+    <tr>
+        <td>Country:</td>
+        <td><input type="text" name="txtCountry" size="20" value="United States"></td>
+    </tr>
+    <tr><td colspan="2"><hr></td></tr>
+    <tr>
+        <td>Product:</td>
+        <td>
+            <select name="cboProduct">
+                <option value="ScanMaster" selected>ScanMaster</option>
+                <option value="ScanPro">ScanPro</option>
+                <option value="PhotoScan">PhotoScan</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Date Purchased:</td>
+        <td><input type="text" name="txtDate" size="20"></td>
+    </tr>
+    <tr>
+        <td>Serial #:</td>
+        <td><input type="text" name="txtSerial" size="20"></td>
+    </tr>
+    <tr>
+        <td valign="top">Used for:</td>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td><input type="radio" name="rdoUsed" value="Home"> Home</td>
+                    <td><input type="radio" name="rdoUsed" value="Educational"> Educational Institution</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="rdoUsed" value="Business" checked> Business</td>
+                    <td><input type="radio" name="rdoUsed" value="Other"> Other</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" name="rdoUsed" value="Government"> Government</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">System (check all that apply):</td>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td><input type="checkbox" name="chkWindows"> Windows</td>
+                    <td><input type="checkbox" name="chkUnix"> UNIX</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkMac"> Macintosh</td>
+                    <td><input type="checkbox" name="chkOther"> Other</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td colspan="2"><hr></td></tr>
+    <tr>
+        <td valign="top">Comments?:</td>
+        <td><textarea name="txtComments" rows="8" cols="45"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="button" value="Click to register" onclick="dangKy()">
+            <input type="reset" value="Click to cancel">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
